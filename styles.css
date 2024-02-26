@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Arial", sans-serif;
   background: #f7f7f7;
@@ -77,6 +78,7 @@ footer .next-button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-weight: bold;
 }
 footer .next-button .arrow-icon {
   margin-left: 5px;
@@ -211,4 +213,114 @@ input[type=number] {
 label {
   color: #FF6B40;
   font-weight: bold;
+}
+
+/* Style pour le bouton de menu */
+.menu-button {
+  cursor: pointer;
+  display: inline-block;
+  float: right; /* Alignez à droite ou ajustez en fonction de votre mise en page */
+  margin-right: 10px;
+}
+
+.menu-bar {
+  display: block;
+  width: 25px; /* Largeur des barres du menu */
+  height: 3px; /* Hauteur des barres du menu */
+  background-color: #333; /* Couleur des barres du menu */
+  margin: 5px 0; /* Espacement entre les barres */
+}
+
+.menu-bar2 {
+  display: block;
+  width: 15px; /* Largeur des barres du menu */
+  height: 3px; /* Hauteur des barres du menu */
+  background-color: #333; /* Couleur des barres du menu */
+  margin: 5px 0; /* Espacement entre les barres */
+}
+
+/* Style pour la modale de menu */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Style pour les éléments de menu */
+.menu-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+}
+.menu-item img {
+  margin-right: 10px;
+}
+
+/* Boutons du menu */
+.modify-service, .close-service {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  /* Ajoutez plus de styles selon vos préférences */
+}
+
+/* Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 10%;
+    opacity: 1;
+  }
+}
+/* Style pour le bouton de fermeture */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.employee-department {
+  /* Styles pour le département de l'employé */
+  background-color: #CBCBCB;
+  color: black;
+  font-size: 0.8em; /* Petite taille de texte pour la catégorie */
+  margin-top: 4px; /* Espace entre le nom et la catégorie */
+  margin-left: 150px;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
 }/*# sourceMappingURL=styles.css.map */

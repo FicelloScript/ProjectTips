@@ -26,3 +26,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 });
+
+function thankYouMessage() {
+    alert("Merci pour votre pourboire !");
+}
+
+// Obtenez le modal
+var modal = document.getElementById("menuModal");
+
+// Obtenez le bouton qui ouvre le modal
+var btn = document.querySelector(".menu-button");
+
+// Obtenez l'élément <span> qui ferme le modal
+var span = document.getElementsByClassName("close")[0];
+
+// Quand l'utilisateur clique sur le bouton, ouvrez le modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Quand l'utilisateur clique sur <span> (x), fermez le modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Quand l'utilisateur clique n'importe où en dehors du modal, fermez-le
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
