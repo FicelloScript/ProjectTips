@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning de Travail</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS compilé à partir de SCSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Qui travaille aujourd'hui ?</h1>
+            <div class="tabs">
+                <button class="tab active">salle</button>
+                <button class="tab">cuisine</button>
+                <button class="tab">service</button>
+            </div>
+        </header>
+        <main>
+            <div class="employee-list">
+                <!-- Répétez ce bloc pour chaque employé -->
+                <div class="employee-card">
+                    <span class="employee-name">Aaron James</span>
+                    <input type="checkbox" id="aaron-james" name="employee" value="Aaron James">
+                    <label for="aaron-james" class="toggle"><span class="toggle-icon"></span></label>
+                </div>
+                <!-- ... autres employés ... -->
+            </div>
+        </main>
+        <footer>
+            <button class="next-button">Suivant</button>
+        </footer>
+    </div>
+</body>
+</html>

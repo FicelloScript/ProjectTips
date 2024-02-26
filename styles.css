@@ -1,0 +1,60 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+header {
+  background: #ff3b30;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+header .tabs {
+  display: flex;
+  justify-content: center;
+}
+header .tabs button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+}
+header .tabs button.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.employee-list {
+  padding: 20px;
+}
+.employee-list .employee-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.employee-list .employee-card .employee-name {
+  flex: 1;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+}
+footer .next-button {
+  background: #ff3b30;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}/*# sourceMappingURL=styles.css.map */
