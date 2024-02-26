@@ -127,8 +127,9 @@ footer .next-button:active {
 .dark-mode .container {
   background-color: black;
 }
-.dark-mode .header {
+.dark-mode header {
   background-color: black;
+  color: white;
 }
 .dark-mode .employee-card {
   background-color: black;
@@ -150,4 +151,64 @@ footer .next-button:active {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.change {
+  text-align: center;
+}
+
+.tip-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+input[type=text],
+input[type=number] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.tip-buttons button {
+  background-color: white;
+  border: #FF6B40;
+  color: #FF6B40;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tip-buttons button:last-child {
+  margin-right: 0;
+}
+
+.tip-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.submit-tip {
+  width: 100%;
+  background-color: white;
+  color: #FF6B40;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+label {
+  color: #FF6B40;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

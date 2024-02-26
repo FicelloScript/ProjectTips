@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning de Travail</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS compilé à partir de SCSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-container">
+                <span id="current-date"></span>
+            </div>
+            <h1>Ajouter un pourboire</h1>
+        </header>
+        <script src="script.js"></script>
+        <main>
+            <form id="tip-form">
+                <div class="form-group">
+                    <label for="table-name">Nom de table</label>
+                    <input type="text" id="table-name" placeholder="cerise">
+                </div>
+                <div class="form-group">
+                    <label for="tip-amount">Montant du pourboire</label>
+                    <input type="number" id="tip-amount" placeholder="3">
+                </div>
+                <div class="tip-buttons">
+                    <button type="button" class="tip-button">0.50</button>
+                    <button type="button" class="tip-button">1.00</button>
+                    <button type="button" class="tip-button">2.00</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <button class="next-button" onclick="location.href=''">Ajouter un pourboire</button>
+        </footer>
+    </div>
+</body>
+</html>
