@@ -15,8 +15,8 @@ body {
 }
 
 header {
-  background: #ff3b30;
-  color: white;
+  background: white;
+  color: black;
   text-align: center;
   padding: 20px 0;
 }
@@ -27,17 +27,19 @@ header .tabs {
 header .tabs button {
   background: none;
   border: none;
-  color: white;
+  color: black;
   padding: 10px 20px;
   margin: 0 5px;
   border-radius: 20px;
 }
 header .tabs button.active {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(88, 88, 88, 0.308);
 }
 
 .employee-list {
   padding: 20px;
+  max-height: 550px;
+  overflow-y: auto;
 }
 .employee-list .employee-card {
   display: flex;
@@ -47,14 +49,105 @@ header .tabs button.active {
 .employee-list .employee-card .employee-name {
   flex: 1;
 }
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.date-container {
+  text-align: left;
+  margin-left: 16px;
+  color: #999999;
+}
+
 footer {
   padding: 20px;
   text-align: center;
 }
 footer .next-button {
-  background: #ff3b30;
-  color: white;
+  background: rgba(189, 139, 104, 0.3882352941);
+  color: #FF6B40;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 135px;
   border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+footer .next-button .arrow-icon {
+  margin-left: 5px;
+  width: 15px;
+  height: auto;
+}
+footer .next-button i.fa {
+  margin-left: 5px;
+}
+footer .next-button:hover {
+  background-color: rgba(168, 113, 74, 0.3882352941);
+}
+footer .next-button:focus {
+  outline: none;
+}
+footer .next-button:active {
+  transform: translateY(2px);
+}
+
+.employee-list2 {
+  padding: 20px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.employee-list2 .employee-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.employee-list2 .employee-card .employee-name {
+  flex: 1;
+}
+.section-header .selected-employees-title {
+  color: #FF6B40;
+  margin: 20px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode .tabs .tab {
+  background-color: #333;
+  color: #ddd;
+}
+.dark-mode .container {
+  background-color: black;
+}
+.dark-mode .header {
+  background-color: black;
+}
+.dark-mode .employee-card {
+  background-color: black;
+}
+.dark-mode .selected-employees-title {
+  color: #FF6B40;
+}
+.dark-mode .date-container {
+  background-color: black;
+}
+
+.dark-mode-button {
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }/*# sourceMappingURL=styles.css.map */

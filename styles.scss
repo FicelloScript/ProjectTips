@@ -15,8 +15,8 @@ body {
 }
 
 header {
-    background: #ff3b30;
-    color: white;
+    background: white;
+    color: black;
     text-align: center;
     padding: 20px 0;
 
@@ -26,12 +26,12 @@ header {
         button {
             background: none;
             border: none;
-            color: white;
+            color: black;
             padding: 10px 20px;
             margin: 0 5px;
             border-radius: 20px;
             &.active {
-                background: rgba(255,255,255,0.3);
+                background: rgba(88, 88, 88, 0.308);
             }
         }
     }
@@ -39,6 +39,8 @@ header {
 
 .employee-list {
     padding: 20px;
+    max-height: 550px; // Hauteur maximale de la liste des employés
+    overflow-y: auto; // Activer le défilement vertical si le contenu dépasse la hauteur maximale
     .employee-card {
         display: flex;
         align-items: center;
@@ -55,14 +57,129 @@ header {
     }
 }
 
+.profile-picture {
+    width: 40px; // Taille de l'image
+    height: 40px; // Taille de l'image
+    border-radius: 50%; // Rendre l'image ronde
+    margin-right: 10px; // Espacer l'image du nom
+    object-fit: cover; // Assurez-vous que l'image couvre bien la zone sans être déformée
+}
+
+.date-container {
+    text-align: left;
+    margin-left: 16px;
+    color: #999999;
+}
+
 footer {
     padding: 20px;
     text-align: center;
     .next-button {
-        background: #ff3b30;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 20px;
+        background: #bd8b6863; // Couleur de fond du bouton
+        color: #FF6B40; // Couleur du texte du bouton
+        border: none; // Pas de bordure pour le bouton
+        padding: 15px 135px; // Padding intérieur du bouton
+        border-radius: 20px; // Bords arrondis pour le bouton
+        font-size: 16px; // Taille de la police
+        cursor: pointer; // Curseur en forme de pointeur lors du survol du bouton
+        transition: background-color 0.3s; // Transition pour l'effet de survol
+
+        .arrow-icon {
+            margin-left: 5px; // Espacer l'icône du texte
+            width: 15px; // Largeur de l'icône
+            height: auto; // Hauteur automatique pour conserver les proportions
+        }
+    
+        i.fa {
+            margin-left: 5px; // Espacer l'icône du texte
+        }
+
+        &:hover {
+            background-color: darken(#bd8b6863, 10%); // Assombrir le bouton lors du survol
+        }
+
+        &:focus {
+            outline: none; // Enlever l'outline lors de la focalisation sur le bouton
+        }
+
+        &:active {
+            transform: translateY(2px); // Effet de pression en appuyant sur le bouton
+        }
     }
+}
+
+.employee-list2 {
+    padding: 20px;
+    max-height: 280px; // Hauteur maximale de la liste des employés
+    overflow-y: auto; // Activer le défilement vertical si le contenu dépasse la hauteur maximale
+    .employee-card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .employee-name {
+            flex: 1;
+        }
+        .toggle {
+            // Style pour le toggle switch
+            .toggle-icon {
+                // Style pour l'icône dans le toggle switch
+            }
+        }
+    }
+}
+
+.section-header {
+    .selected-employees-title {
+        color: #FF6B40;
+        margin: 20px 0;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    // Inversez d'autres couleurs si nécessaire
+
+    // Assurez-vous d'ajuster les couleurs des autres éléments en conséquence
+    .tabs .tab {
+        background-color: #333; // Couleur de fond plus claire pour les onglets en mode nuit
+        color: #ddd; // Couleur de texte pour les onglets en mode nuit
+    }
+
+    .container {
+        background-color: black;
+    }
+
+    .header {
+        background-color: black;
+    }
+
+    .employee-card {
+        background-color: black; // Couleur de fond pour les cartes employé en mode nuit
+    }
+
+    .selected-employees-title {
+        color: #FF6B40; // Gardez le titre orange ou choisissez une teinte qui va bien avec le fond noir
+    }
+
+    .date-container {
+        background-color: black;
+    }
+}
+
+.dark-mode-button {
+    // Styles pour le bouton du mode nuit
+    // Par exemple, un bouton avec une icône de lune pourrait être stylisé comme ceci :
+    background: #555; // Fond sombre pour le bouton
+    color: #fff; // Texte blanc pour le bouton
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed; // Fixer le bouton pour qu'il soit toujours accessible
+    bottom: 20px;
+    right: 20px;
+    // Ajoutez des transitions ou autres effets au besoin
 }

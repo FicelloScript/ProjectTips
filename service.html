@@ -12,16 +12,19 @@
             <div class="date-container">
                 <span id="current-date"></span>
             </div>
-            <h1>Qui travaille aujourd'hui ?</h1>
+            <h1>Récapitulatif du service</h1>
             <div class="tabs">
-                <button class="tab active" onclick="location.href='index.html'">salle</button>
+                <button class="tab" onclick="location.href='index.html'">salle</button>
                 <button class="tab" onclick="location.href='cuisine.html'">cuisine</button>
-                <button class="tab" onclick="location.href='service.html'">service</button>
+                <button class="tab active" onclick="location.href='service.html'">service</button>
+            </div>
+            <div class="section-header">
+                <h2 class="selected-employees-title">Employés sélectionnés</h2>
             </div>
         </header>
         <script src="script.js"></script>
         <main>
-            <div class="employee-list">
+            <div class="employee-list2">
                 <!-- Répétez ce bloc pour chaque employé -->
                 <div class="employee-card">
                     <img src="./images/pdp.png" alt="Profil de Aaron James" class="profile-picture">
@@ -109,9 +112,13 @@
                     <label for="aaron-james" class="toggle"><span class="toggle-icon"></span></label>
                 </div>
             </div>
+            <div class="section-header">
+                <h2 class="selected-employees-title">Service</h2>
+            </div>
+            <button id="toggle-dark-mode" class="dark-mode-button">Mode Nuit</button>
         </main>
         <footer>
-            <button class="next-button" onclick="location.href='cuisine.html'">Suivant <img src="./images/arrow.png" alt="" class="arrow-icon"></button>
+            <button class="next-button" onclick="location.href='cuisine.html'">Commencer le service !</button>
         </footer>
     </div>
 </body>
